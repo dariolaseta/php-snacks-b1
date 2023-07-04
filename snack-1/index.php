@@ -41,7 +41,7 @@ $matches = [
 ?>
 
 <ul>
-    <?php> foreach ($matches as $match) { ?>
+    <?php foreach ($matches as $match) { ?>
         <li>
             <?php echo $match['team1'] . ' '; ?>
             -

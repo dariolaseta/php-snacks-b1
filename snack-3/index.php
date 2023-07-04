@@ -9,7 +9,6 @@
             echo $element;
         }
     }
-
     
     arrayMerge($array1, $array2);
 ?>
