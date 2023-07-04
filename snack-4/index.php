@@ -3,12 +3,16 @@
     $numberArray = [];
 
     function numbers(int $firstNumber, int $secondNumber, $array){
-        if($firstNumber < $secondNumber){
-            array_push($array, $firstNumber);
-        }
+        if(count($array) < $secondNumber || $firstNumber > $secondNumber){
+            return false;
+        }else{
+            for($i = $firstNumber; $i < $secondNumber + 1; $i++){
+                $newArray[] = $array[$i];
+            }
 
-        var_dump($array);
+            return $newArray;
+        }
     }
 
-    numbers(1, 3, $numberArray);
+    var_dump(numbers(2, 4, $numberArray));
 ?>
